@@ -1,0 +1,48 @@
+/* Custom styles to complement the Bootstrap theme */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.encryption-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-encrypt {
+    min-width: 120px;
+}
+
+.encryption-rules {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--bs-info);
+}
+
+.result-box {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    min-height: 60px;
+    padding: 15px;
+    word-break: break-all;
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Add a subtle animation for the result area */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.result-container:not(.d-none) {
+    animation: fadeIn 0.5s ease-in-out;
+}
